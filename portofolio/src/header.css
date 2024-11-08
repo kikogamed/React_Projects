@@ -1,0 +1,36 @@
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #2d2e2e;
+    color: #7d8792;
+    padding: 20px 0px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 5;
+    scroll-behavior: smooth;
+
+}
+
+.header a {
+    cursor: pointer;
+    transition: .3s;
+    text-decoration: none;
+    color: var(--txt-color);
+}
+
+.header a:hover {
+    color: #e0a80d;
+}
+
+.header a:not(:last-of-type) {
+    margin-right: 35px;
+}
+
+.logo {
+    font-weight: bolder;
+    font-size: 25px;
+    color: white;
+    cursor: pointer;
+}

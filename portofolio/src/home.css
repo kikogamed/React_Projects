@@ -1,0 +1,108 @@
+@import url(root.css);
+:root {
+    --name-width: 445px;
+}
+
+
+.home {
+    margin-top: 73px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: calc(100vh - 73px);
+}
+
+.hello {
+    color: white;
+    font-size: 23px;
+    text-transform: uppercase;
+}
+
+.name {
+    font-size: 60px;
+    text-transform: uppercase;
+    color: var(--orange-color);
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -65px;
+    position: relative;
+    overflow: hidden;
+}
+.name .cursor {
+    height: 50px;
+    width: 8px;
+    background-color: var(--orange-color);
+    display: inline-block;
+    margin-top: 5px;
+    margin-left: 5px;
+    animation: cursor .6s infinite linear alternate;
+}
+
+.text1 {
+    animation: text1 30s infinite steps(12, end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+.text2 {
+    animation: text2 30s infinite steps(18, end);
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.par {
+    color: #9aa9b3;
+    text-align: center;
+    line-height: 2;
+    width: 50%;
+    font-size: 17px;
+    margin-top: -20px;
+}
+
+button {
+    padding: 15px 40px;
+    border: var(--orange-color) 2px solid;
+    border-radius: 50px;
+    outline: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    margin-top: 50px;
+    cursor: pointer;
+    transition: .3s;
+}
+button:hover {
+    background-color: var(--orange-color);
+}
+
+/* ANIMATIONS */
+
+@keyframes cursor {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes text1 {
+    0%, 45%, 50% , 100% {
+        width: 0;
+    }
+
+    10%, 40% {
+        width: 445px;
+    }
+}
+@keyframes text2 {
+    0%, 50%, 95% , 100% {
+        width: 0;
+    }
+
+    60%, 90% {
+        width: 670px;
+    }
+}

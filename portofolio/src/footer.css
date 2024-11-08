@@ -1,0 +1,15 @@
+.footer {
+    background-color: #212222;
+    color: var(--orange-color);
+    padding: 100px;
+    text-align: center;
+    font-size: 30px;
+}
+.footer svg {
+    margin-right: 20px;
+    cursor: pointer;
+    transition: .5s;
+}
+.footer svg:hover {
+    color: var(--txt-color);
+}

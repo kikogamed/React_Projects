@@ -1,0 +1,25 @@
+@import url(../src/root.css);
+
+.about {
+    display: flex;
+    padding: 100px;
+    background-color: var(--brown-color);
+    overflow: hidden;
+}
+
+.txt {
+    margin-left: 80px;
+}
+
+.about-p {
+    color: var(--txt-color);
+    font-size: 17px;
+    line-height: 2;
+}
+
+.about-btn {
+    margin-right: 20px;
+    font-size: 15px;
+    transition: .3s;
+}
+

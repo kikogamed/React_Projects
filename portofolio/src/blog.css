@@ -1,0 +1,111 @@
+.blog {
+    padding: 50px 150px;
+    background-color: var(--brown-color);
+    text-align: center;
+}
+
+.blog-cards {
+    display: flex;
+    gap: 50px;
+    text-align: start;
+    margin-top: 50px;
+}
+
+.blog-card {
+    background-color: #212222;
+    border-radius: 10px;
+    transition: 1s;
+    position: relative;
+    z-index: 2;
+}
+
+.blog-card * {
+    position:relative;
+    z-index: 3;
+}
+
+.blog-card:hover {
+    transform: scale(1.1);
+}
+
+.blog-card:hover::after {
+    display: block;
+}
+
+.blog-card:hover::before {
+    display: block;
+}
+
+.blog-card .blog-img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.blog-card img {
+    width: 100%;
+}
+
+.card-txt {
+    padding: 0 30px;
+    background-color: #212222;
+    padding-top: 5px;
+    top: -5px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-bottom: 5px;
+}
+
+.card-txt h3 {
+    color: white;
+    font-weight: 600;
+    font-size: 20px;
+}
+
+.card-txt .title {
+    color: var(--orange-color);
+    margin-top: -10px;
+}
+
+.card-txt p:last-of-type {
+    color: var(--txt-color);
+    line-height: 2;
+    font-size: 17px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.blog-card::after,
+.blog-card::before {
+    content: "";
+    background-color: transparent;
+    position: absolute;
+    width: calc(100% + 10px);
+    height: calc(100% + 10px);
+    left: 50%;
+    top: calc(50% - 2.5px);
+    transform: translate(-50%, -50%);
+    border-radius: 10px;
+    z-index: 1;
+    background-image: conic-gradient(from var(--angle), transparent 70%, #191a1a);
+    animation: rotate 5s linear infinite;
+    display: none;
+}
+.blog-card::before {
+    filter: blur(1.5rem);
+    opacity: 0;
+}
+
+
+@keyframes rotate {
+    from {
+        --angle: 0deg;
+    }
+    to {
+        --angle: 360deg;
+    }
+}
+

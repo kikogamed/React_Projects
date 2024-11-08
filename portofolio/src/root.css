@@ -1,0 +1,11 @@
+:root {
+    --orange-color: #e0a80d;
+    --brown-color: #2d2e2e;
+    --grey-color: #7d8792;
+    --txt-color: #9aa9b3;
+}
+
+html {
+    scroll-behavior: smooth;
+
+}

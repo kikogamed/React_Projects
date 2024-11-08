@@ -1,0 +1,27 @@
+@import url(./root.css);
+
+.stats {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 100px;
+    text-align: center;
+    background-image: url(./imgs/stats.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: white;
+}
+
+.stat svg {
+    font-size: 25px;
+}
+.stat h3 {
+    color: var(--orange-color);
+    font-size: 50px;
+    margin: 10px 0;
+}
+.stat p {
+    font-size: 20px;
+    margin-top: 0px;
+}
