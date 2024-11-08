@@ -1,0 +1,61 @@
+#root {
+  display: flex;
+  justify-content: center;
+  padding-top: 100px;
+  background-image: linear-gradient(135deg , #d6d685, #5b5be8);
+  padding-bottom: 140px;
+}
+
+.calc {
+  width: 300px;
+}
+
+.screen {
+  background-color: brown;
+  width: calc(100% - 10px);
+  height: 80px;
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 10px;
+}
+
+.prev {
+  margin-bottom: 20px;
+  color: rgb(208, 207, 207);
+}
+
+.current {
+  color: white;
+  font-size: 30px;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 3px;
+  flex-basis: 3;
+  background-color: white;
+}
+
+.buttons div {
+  background-color: #f5f4f4;
+  padding: 30px;
+  text-align: center;
+  cursor: pointer;
+  transition: .3s;
+  font-weight: 500;
+  color: rgb(55, 53, 53);
+}
+
+.buttons div:not(.num) {
+  flex-grow: 1;
+}
+
+.num {
+  width: 8px;
+}
+
+.buttons div:hover {
+  background-color: #e8e7e7;
+}
+

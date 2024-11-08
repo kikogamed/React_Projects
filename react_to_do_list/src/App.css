@@ -1,0 +1,72 @@
+body {
+    display: flex;
+    align-items: center ;
+    justify-content: center;
+}
+.App {
+    border: #3d3d3d 1px solid;
+    margin: 100px;
+    padding: 20px 80px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+h2 {
+    color: white;
+    background-color: #3d3d3d;
+    padding: 10px;
+}
+input {
+    border-color: #3d3d3d;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    font-size: 20px;
+    margin-right: 10px;
+}
+button {
+    cursor: pointer;
+    padding: 5px;
+    font-size: 20px;
+    color: #3d3d3d;
+    background-color: white;
+    font-weight: bold;
+    transition: .3s;
+    border-color: #3d3d3d;
+}
+button:hover {
+    color: white;
+    background-color: #3d3d3d;
+    border-color: white;
+}
+ul {
+    list-style: none;
+    font-size: 30px;
+    padding: 0;
+    margin-top: 0;
+    width: 100%;
+    text-transform: capitalize;
+    list-style-type: "-";
+}
+li {
+    color: #3d3d3d;
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+}
+span {
+    display: inline-block;
+    color: red;
+    cursor: pointer;
+}
+.done {
+    text-decoration: line-through;
+}
+
+body {
+    font-family: system-ui;
+}
